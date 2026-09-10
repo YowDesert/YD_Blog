@@ -6,7 +6,7 @@
   <link href="https://yowdesert.github.io/atom.xml" rel="self"/>
   
   <link href="https://yowdesert.github.io/"/>
-  <updated>2026-08-29T05:58:01.728Z</updated>
+  <updated>2026-09-09T15:42:00.000Z</updated>
   <id>https://yowdesert.github.io/</id>
   
   <author>
@@ -15,6 +15,106 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常見演算法設計策略分類</title>
+    <link href="https://yowdesert.github.io/posts/65f4596b.html"/>
+    <id>https://yowdesert.github.io/posts/65f4596b.html</id>
+    <published>2026-09-09T15:42:00.000Z</published>
+    <updated>2026-09-09T15:42:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;看到這個</summary>
+        
+      
+    
+    
+    
+    <category term="資料結構" scheme="https://yowdesert.github.io/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/"/>
+    
+    
+    <category term="資料結構" scheme="https://yowdesert.github.io/tags/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>資工研究所常見演算法時間複雜度整理</title>
+    <link href="https://yowdesert.github.io/posts/49207314.html"/>
+    <id>https://yowdesert.github.io/posts/49207314.html</id>
+    <published>2026-09-09T15:42:00.000Z</published>
+    <updated>2026-09-09T15:42:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;資工研究所常見演算法時間複雜度整理&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;版本：2026-09-09&lt;br&gt;
+語言：繁體中文（zh-TW）&lt;br&gt;
+定位：資工研究所入學考、演算法／資料結構課程、口試與複習速查&lt;br&gt;
+主要依據：CLRS、原始論文、Princeton</summary>
+        
+      
+    
+    
+    
+    <category term="資料結構" scheme="https://yowdesert.github.io/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/"/>
+    
+    
+    <category term="資料結構" scheme="https://yowdesert.github.io/tags/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/"/>
+    
+    <category term="演算法" scheme="https://yowdesert.github.io/tags/%E6%BC%94%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="時間複雜度" scheme="https://yowdesert.github.io/tags/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/"/>
+    
+    <category term="圖論" scheme="https://yowdesert.github.io/tags/%E5%9C%96%E8%AB%96/"/>
+    
+    <category term="動態規劃" scheme="https://yowdesert.github.io/tags/%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83/"/>
+    
+    <category term="字串演算法" scheme="https://yowdesert.github.io/tags/%E5%AD%97%E4%B8%B2%E6%BC%94%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OS-CH7-補充加強觀念</title>
+    <link href="https://yowdesert.github.io/posts/5bbc732a.html"/>
+    <id>https://yowdesert.github.io/posts/5bbc732a.html</id>
+    <published>2026-09-02T06:49:00.000Z</published>
+    <updated>2026-09-10T02:58:53.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;CPU產生的是Logical Address，Memory -&amp;gt; Physical Address
+&lt;ul&gt;
+&lt;li&gt;Memory 真正使用的是Physical</summary>
+        
+      
+    
+    
+    
+    <category term="研究所題目" scheme="https://yowdesert.github.io/categories/%E7%A0%94%E7%A9%B6%E6%89%80%E9%A1%8C%E7%9B%AE/"/>
+    
+    <category term="作業系統" scheme="https://yowdesert.github.io/categories/%E7%A0%94%E7%A9%B6%E6%89%80%E9%A1%8C%E7%9B%AE/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/"/>
+    
+    <category term="第七章" scheme="https://yowdesert.github.io/categories/%E7%A0%94%E7%A9%B6%E6%89%80%E9%A1%8C%E7%9B%AE/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
+    
+    
+    <category term="作業系統" scheme="https://yowdesert.github.io/tags/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>資料結構 - Search and Sort</title>
@@ -528,100 +628,6 @@
     <category term="線性代數" scheme="https://yowdesert.github.io/tags/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/"/>
     
     <category term="對角化及其應用" scheme="https://yowdesert.github.io/tags/%E5%B0%8D%E8%A7%92%E5%8C%96%E5%8F%8A%E5%85%B6%E6%87%89%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>(線性代數) 線代小技巧</title>
-    <link href="https://yowdesert.github.io/posts/590f0522.html"/>
-    <id>https://yowdesert.github.io/posts/590f0522.html</id>
-    <published>2026-03-11T15:08:00.000Z</published>
-    <updated>2026-03-12T12:09:19.358Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;甚麼時候沒有反矩陣？&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;方陣有反矩陣 ⇔ det 不為 0 ⇔ rank = n ⇔ 行列線性獨立 ⇔ 𝐴𝑥=0 ， Ax=0 只有零解 ⇔ 0</summary>
-        
-      
-    
-    
-    
-    <category term="線性代數" scheme="https://yowdesert.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/"/>
-    
-    <category term="其他" scheme="https://yowdesert.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/%E5%85%B6%E4%BB%96/"/>
-    
-    
-    <category term="線性代數" scheme="https://yowdesert.github.io/tags/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>(線性代數) EigenValue and EigenVector計算</title>
-    <link href="https://yowdesert.github.io/posts/e60b2746.html"/>
-    <id>https://yowdesert.github.io/posts/e60b2746.html</id>
-    <published>2026-03-11T12:08:00.000Z</published>
-    <updated>2026-05-25T15:28:02.734Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;求EigenValue 方法&lt;/h1&gt;
-&lt;h2 id=&quot;一般法&quot;&gt;一般法&lt;/h2&gt;
-&lt;p&gt;$$&lt;br&gt;
-Av = λv (v != 0)&lt;br&gt;
-=&amp;gt; (A - λI) v = 0&lt;br&gt;
-=&amp;gt; det(A-λI) = 0&lt;br&gt;
-$$&lt;br&gt;
-又叫做</summary>
-        
-      
-    
-    
-    
-    <category term="線性代數" scheme="https://yowdesert.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/"/>
-    
-    <category term="對角化及其應用" scheme="https://yowdesert.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/%E5%B0%8D%E8%A7%92%E5%8C%96%E5%8F%8A%E5%85%B6%E6%87%89%E7%94%A8/"/>
-    
-    
-    <category term="線性代數" scheme="https://yowdesert.github.io/tags/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/"/>
-    
-    <category term="對角化及其應用" scheme="https://yowdesert.github.io/tags/%E5%B0%8D%E8%A7%92%E5%8C%96%E5%8F%8A%E5%85%B6%E6%87%89%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[日文] 日文學習-進階4-文法</title>
-    <link href="https://yowdesert.github.io/posts/8a817699.html"/>
-    <id>https://yowdesert.github.io/posts/8a817699.html</id>
-    <published>2026-01-30T08:00:00.000Z</published>
-    <updated>2026-01-30T09:47:26.672Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-～やすいです（容易～／好～）&quot;&gt;1) ～やすいです（容易～／好～）&lt;/h2&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="日文" scheme="https://yowdesert.github.io/categories/%E6%97%A5%E6%96%87/"/>
-    
-    <category term="文法" scheme="https://yowdesert.github.io/categories/%E6%97%A5%E6%96%87/%E6%96%87%E6%B3%95/"/>
-    
-    
-    <category term="日文" scheme="https://yowdesert.github.io/tags/%E6%97%A5%E6%96%87/"/>
     
   </entry>
   

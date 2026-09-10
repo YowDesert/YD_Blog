@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>YD's 學習筆記 - 一起從零開始踏進這個世界</title><meta name="author" content="YowDesert"><meta name="copyright" content="YowDesert"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="這是YowDesert的部落格，記錄學習資訊工程領域的過程和心得，並以簡單白話的方式呈現，一起和我踏入資訊世界吧，有興趣的話歡迎Follow我歐。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YD&#39;s 學習筆記">
+<meta property="og:url" content="https://yowdesert.github.io/page/6/index.html">
+<meta property="og:site_name" content="YD&#39;s 學習筆記">
+<meta property="og:description" content="這是YowDesert的部落格，記錄學習資訊工程領域的過程和心得，並以簡單白話的方式呈現，一起和我踏入資訊世界吧，有興趣的話歡迎Follow我歐。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://yowdesert.github.io/img/butterfly-icon.png">
+<meta property="article:author" content="YowDesert">
+<meta property="article:tag" content="筆記,學習,學習筆記,程式設計,演算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yowdesert.github.io/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yowdesert.github.io/page/6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><meta name="google-site-verification" content="google5c543dcf16a66e3c.html"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.4/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-5975504062599634',
+  enable_page_level_ads: 'true'
+});</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切換為繁體中文","cht_to_chs":"已切換為簡體中文","day_to_night":"已切換為深色模式","night_to_day":"已切換為淺色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'YD\'s 學習筆記',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="YD's 學習筆記" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">載入中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/img/backgroundPic.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">38</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/nav_Picture.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/Top.png" alt="Logo"><span class="site-name">YD's 學習筆記</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">YD's 學習筆記</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/yowdesert" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:csaidesert@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/a393bce2.html" title="[資訊安全] 對稱式加密 vs 非對稱式加密 (RSA)">[資訊安全] 對稱式加密 vs 非對稱式加密 (RSA)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2025-08-07T00:30:00.000Z" title="發表於 2025-08-07 08:30:00">2025-08-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/Cryptography/">Cryptography</a></span></div><div class="content">Topic：對稱式加密 vs 非對稱式加密 一、什麼是 RSA？是一種「非對稱式加密演算法」，由 Rivest、Shamir、Adleman 發明，透過 一對金鑰（公鑰 + 私鑰） 來完成加密與解密。 RSA 的核心特性 ✅ 公鑰（Public Key）可公開給任何人，用來加密資料 ✅ 私鑰（Private Key）僅能由自己保留，用來解密資料 ✅ 數位簽章可用私鑰簽章，讓他人用公鑰驗證身份與完整性   二、金鑰數量差異    加密類型 使用幾把金鑰？ 說明     🔐 對稱式加密 1 把 加密與解密都使用同一把金鑰   🔓 非對稱式加密（RSA） 2 把 公鑰加密、私鑰解密（簽章相反）      三、適合用途不同    項目 對稱式加密 非對稱式加密（RSA）     🔒 資料加密 ✅ 適合大量資料 ❌ 速度慢，不適合   🔐 金鑰交換 ❌ 不安全 ✅ 安全，無需事先共享   📝 數位簽章 ❌ 不支援 ✅ 支援      四、速度與效能差異🔐 對稱式加密AES) ✅ 速度快 ✅ 適合加密整份檔案或大量資料  🔓 非對稱式加密（如 RSA） ❌ 速度慢 ❌ 多用來保...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/e587cb6a.html" title="[資訊安全] RSA 是什麼？快速理解筆記">[資訊安全] RSA 是什麼？快速理解筆記</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2025-08-07T00:00:00.000Z" title="發表於 2025-08-07 08:00:00">2025-08-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/Cryptography/">Cryptography</a></span></div><div class="content">Topic：RSA 是什麼？RSA 是一種 非對稱加密演算法（Asymmetric Encryption Algorithm）。  一、什麼是非對稱加密？非對稱加密使用「一對金鑰」：  🔓 公開金鑰（Public Key）可以提供給他人，用來加密資料  🔐 私密金鑰（Private Key）僅自己持有，用來解密資料   👉 與對稱加密（只有一把金鑰）相比，非對稱加密（如 RSA）可以做到：  ✅ 別人可以加密給你 ✅ 只有你能解密   二、RSA 與對稱加密比較    比較項目 對稱加密 非對稱加密（RSA）     🔑 金鑰數量 1 把 2 把（公鑰 + 私鑰）   ⚡ 加解密速度 快 慢   📦 加密大量資料 適合 不適合   🔁 金鑰交換難度 高（需安全傳送） 低（公鑰可公開）   🔏 支援數位簽章 否 是   🔧 常見用途 檔案加密、VPN 金鑰交換、身份驗證、簽章      三、RSA 的核心數學概念RSA 的安全性建立在一個關鍵事實上：  大數質因數分解非常困難  金鑰產生流程（Key Generation） 選擇兩個大質數    p,\; q 計算模...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/8c9724f3.html" title="Blog 短介">Blog 短介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2025-08-05T23:30:00.000Z" title="發表於 2025-08-06 07:30:00">2025-08-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BB%8B%E7%B4%B9/">介紹</a></span></div><div class="content">👋 Hi，我是 YowDesert 歡迎來到我的個人部落格！ 這裡是我在學習旅程中的一個小基地，會紀錄我在：  程式學習 CTF 解題（picoCTF） 工具使用心得 技術筆記 以及生活中的一些想法   🧑‍💻 關於我 🎓 學生 / 工程師 / 自學者 我喜歡紀錄學習過程遇到的問題與解法， 這不只能幫助自己釐清思路，也希望能幫助到正在尋找解答的人。 目前正在嘗試：  Hexo GitHub Pages Python Java 各種工具與技術   🚀 為什麼創立這個部落格？ 在學習的路上，我常會遇到各種大小問題： 有些解法藏在文章裡，有些來自他人的教學與經驗。 我希望把自己的學習過程、探索心得與解決方法紀錄下來：  幫助自己整理知識 幫助遇到相似問題的讀者 留下學習軌跡，回頭看也能成為動力  如果你正在面臨類似的困難，也許這裡的內容能給你方向。 若你有不同想法或更好的做法，也非常歡迎留言交流！  📝 Blog 未來內容 將會分享： 🔐 CTF / picoCTF 解題筆記 記錄思路、技巧、踩雷與心得。 📚 各科學習筆記 如：  作業系統 資料結構 計算機網路 線性代...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/5/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="page-number current">6</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">YowDesert</div><div class="author-info-description">這是YowDesert的部落格，記錄學習資訊工程領域的過程和心得，並以簡單白話的方式呈現，一起和我踏入資訊世界吧，有興趣的話歡迎Follow我歐。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">38</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yowdesert"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/yowdesert" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:csaidesert@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/65f4596b.html" title="常見演算法設計策略分類">常見演算法設計策略分類</a><time datetime="2026-09-09T15:42:00.000Z" title="發表於 2026-09-09 23:42:00">2026-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/49207314.html" title="資工研究所常見演算法時間複雜度整理">資工研究所常見演算法時間複雜度整理</a><time datetime="2026-09-09T15:42:00.000Z" title="發表於 2026-09-09 23:42:00">2026-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5bbc732a.html" title="OS-CH7-補充加強觀念">OS-CH7-補充加強觀念</a><time datetime="2026-09-02T06:49:00.000Z" title="發表於 2026-09-02 14:49:00">2026-09-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/513a4877.html" title="資料結構 - Search and Sort">資料結構 - Search and Sort</a><time datetime="2026-08-28T02:18:00.000Z" title="發表於 2026-08-28 10:18:00">2026-08-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/917205a6.html" title="OS-CH5-補充加強觀念">OS-CH5-補充加強觀念</a><time datetime="2026-08-25T06:49:00.000Z" title="發表於 2026-08-25 14:49:00">2026-08-25</time></div></div></div></div><div class="card-widget ads-wrap"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5975504062599634" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5975504062599634" data-ad-slot="9206833147" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分類</span>
+            <a class="card-more-btn" href="/categories/" title="檢視更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BB%8B%E7%B4%B9/"><span class="card-category-list-name">介紹</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/"><span class="card-category-list-name">作業系統</span><span class="card-category-list-count">10</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/Process-and-Concurrency/"><span class="card-category-list-name">Process and Concurrency</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/Storage-I-O-Systems/"><span class="card-category-list-name">Storage & I/O Systems</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/%E7%AC%AC%E4%B8%83%E7%AB%A0/"><span class="card-category-list-name">第七章</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/%E7%AC%AC%E4%B8%89%E7%AB%A0/"><span class="card-category-list-name">第三章</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/%E7%AC%AC%E4%BA%94%E7%AB%A0/"><span class="card-category-list-name">第五章</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/%E7%AC%AC%E5%9B%9B%E7%AB%A0/"><span class="card-category-list-name">第四章</span><span class="card-category-list-count">3</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>標籤</span></div><div class="card-tag-cloud"><a href="/tags/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/" style="font-size: 1.4em; color: #99a5b6">資料結構</a> <a href="/tags/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/" style="font-size: 1.1em; color: #999">離散數學</a> <a href="/tags/%E5%96%AE%E5%AD%97/" style="font-size: 1.2em; color: #999da3">單字</a> <a href="/tags/%E6%97%A5%E6%96%87/" style="font-size: 1.45em; color: #99a7ba">日文</a> <a href="/tags/%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83/" style="font-size: 1.1em; color: #999">動態規劃</a> <a href="/tags/%E7%9F%A9%E9%99%A3/" style="font-size: 1.1em; color: #999">矩陣</a> <a href="/tags/Cryptography/" style="font-size: 1.3em; color: #99a1ac">Cryptography</a> <a href="/tags/SQL/" style="font-size: 1.1em; color: #999">SQL</a> <a href="/tags/Blog-%E9%96%8B%E5%BC%B5/" style="font-size: 1.1em; color: #999">Blog 開張</a> <a href="/tags/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/" style="font-size: 1.1em; color: #999">時間複雜度</a> <a href="/tags/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/" style="font-size: 1.35em; color: #99a3b1">資訊安全</a> <a href="/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9/" style="font-size: 1.1em; color: #999">自我介紹</a> <a href="/tags/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/" style="font-size: 1.25em; color: #999fa7">線性代數</a> <a href="/tags/RSA/" style="font-size: 1.15em; color: #999b9e">RSA</a> <a href="/tags/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1/" style="font-size: 1.5em; color: #99a9bf">作業系統</a> <a href="/tags/%E5%B0%8D%E8%A7%92%E5%8C%96%E5%8F%8A%E5%85%B6%E6%87%89%E7%94%A8/" style="font-size: 1.15em; color: #999b9e">對角化及其應用</a> <a href="/tags/%E6%95%B8%E5%AD%B8/" style="font-size: 1.1em; color: #999">數學</a> <a href="/tags/%E5%AD%97%E4%B8%B2%E6%BC%94%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">字串演算法</a> <a href="/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%B5%84%E7%B9%94/" style="font-size: 1.2em; color: #999da3">計算機組織</a> <a href="/tags/%E7%B7%A8%E7%A2%BC/" style="font-size: 1.1em; color: #999">編碼</a> <a href="/tags/%E8%B3%87%E6%96%99%E5%BA%AB%E7%B3%BB%E7%B5%B1/" style="font-size: 1.2em; color: #999da3">資料庫系統</a> <a href="/tags/%E5%9C%96%E8%AB%96/" style="font-size: 1.1em; color: #999">圖論</a> <a href="/tags/AES/" style="font-size: 1.1em; color: #999">AES</a> <a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">演算法</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>歸檔</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/09/">
+            <span class="card-archive-list-date">
+              九月 2026
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/08/">
+            <span class="card-archive-list-date">
+              八月 2026
+            </span>
+            <span class="card-archive-list-count">15</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/04/">
+            <span class="card-archive-list-date">
+              四月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/03/">
+            <span class="card-archive-list-date">
+              三月 2026
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              一月 2026
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">11</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/08/">
+            <span class="card-archive-list-date">
+              八月 2025
+            </span>
+            <span class="card-archive-list-count">8</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>網站資訊</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章數量 :</div><div class="item-count">53</div></div><div class="webinfo-item"><div class="item-name">總字數 :</div><div class="item-count">138.2k</div></div><div class="webinfo-item"><div class="item-name">訪客數 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">總瀏覽量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最後更新時間 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-10T15:20:42.528Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/nav_Picture.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By YowDesert</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日夜模式切換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.4/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["今日事&#44;今日畢","Never put off till tomorrow what you can do today"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["今日事&#44;今日畢","Never put off till tomorrow what you can do today"])
+}
+typedJSFn.run(subtitleType)</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const config = mermaidSrc.dataset.config ? JSON.parse(mermaidSrc.dataset.config) : {}
+      if (!config.theme) {
+        config.theme = theme
+      }
+      const mermaidThemeConfig = `%%{init: ${JSON.stringify(config)}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@11.12.1/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
