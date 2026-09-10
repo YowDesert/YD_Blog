@@ -283,6 +283,7 @@ Goal：**最小化 page fault rate** → **減少 disk I/O** → 整體效能更
 Time-based Algorithm
 - FIFO：最早進來的先出去（oldest page）
 - Optimal (OPT/MIN)：換掉「未來最久才會再被用到」的 page
+    - 又叫做 **Belady's algorithm**
 - LRU：換掉「最久沒被用到」的 page
 
 Frequency-based
@@ -1106,6 +1107,16 @@ Page Fault Ratio ↓
 #### 核心
 
 > 正在進行 I/O 的 Page 不能被 Page Replacement Algorithm 換出去。
+
+# 總結 Bits 分別
+
+| Bit                          | `0` 代表              | `1` 代表              | 主要用途                                         |
+| ---------------------------- | ------------------- | ------------------- | -------------------------------------------- |
+| **Mode bit**                 | **Kernel Mode**     | **User Mode**       | 判斷 CPU 現在執行 OS 還是使用者程式                       |
+| **Valid / Invalid bit**      | Page 不在 RAM，或位址非法   | Page 在 RAM，可正常存取    | 判斷是否可能發生 Page Fault                          |
+| **Dirty / Modification bit** | **Clean**，Page 沒被修改 | **Dirty**，Page 被修改過 | 換頁時判斷是否要寫回 Disk                              |
+| **Reference bit**            | 最近沒被存取              | 最近有被存取              | Clock / Second-Chance、近似 LRU                 |
+| **Protection bit**           | 無固定統一意義             | 無固定統一意義             | 控制 Read / Write / Execute 權限，實際 0/1 定義依硬體設計  |
 
 
 ---
